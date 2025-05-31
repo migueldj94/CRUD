@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+
+
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:#f3f4f6;
+    color:#111827;
+    padding: 20px;
+}
+
+.container{
+    max-width:  800px;
+    margin:0 auto;
+    background:white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    
+
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+}
+
+label {
+  font-weight: 600;
+  color: #374151;
+}
+
+input[type="date"],
+input[type="number"],
+input[type="file"] {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  padding: 12px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #6398a5;
+}
+
+#listaFacturas {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.factura {
+  background-color: #fafafa;
+  border-left: 5px solid #007bff;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.factura p {
+  margin: 5px 0;
+}
+
+
+
+.factura img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.factura button {
+  padding: 6px 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 6px;
+  color: rgb(249, 246, 246);
+  cursor: pointer;
+}
+
+.factura button.editar {
+  background-color: #f5ce58;
+}
+
+.factura button.eliminar {
+  background-color: #dc3545;
+}
+
+.total {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #10b981;
+}
+
