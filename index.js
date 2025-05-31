@@ -83,7 +83,7 @@ app.put('/facturas/:id', (req, res) => {
 
 
 
-// Iniciar servidor
+// Iniciar servidor para su funcion 
 app.listen(PORT, () => {
   console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
 });
